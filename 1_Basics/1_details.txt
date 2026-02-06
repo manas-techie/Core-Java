@@ -1,0 +1,60 @@
+1. The Professional Way (Setting an Output Path)
+If you use the Extension Pack for Java (the official one by Microsoft/Red Hat), follow these steps:
+
+Structure your folder:
+
+Create a folder named src and move your .java files into it.
+
+Create an empty folder named bin (this is where your .class files will go).
+
+Configure VS Code:
+
+In the root of your folder, create a new folder named .vscode.
+
+Inside .vscode, create a file named settings.json.
+
+Paste this code inside:
+
+JSON
+
+{
+    "java.project.outputPath": "bin",
+    "java.project.sourcePaths": ["src"]
+}
+Run the Code: Use the "Run Java" button (play icon) at the top right instead of manually typing javac in the terminal. VS Code will now automatically put all compiled files into the bin folder.
+
+
+
+2. The "Lazy" Way (Hiding the Files)
+If you don't want to change your folder structure but just want the .class files to disappear from your sidebar so they don't distract you:
+
+Open VS Code Settings (Ctrl + ,).
+
+Search for Files: Exclude.
+
+Click Add Pattern.
+
+Type **/*.class and click OK.
+
+[!TIP] This won't move the files, but it will hide them from the File Explorer on the left, keeping your workspace looking clean.
+
+
+
+
+3. Using Build Tools (Maven or Gradle)
+If you plan on making larger projects, I recommend creating a proper Java Project:
+
+Press Ctrl + Shift + P.
+
+Type Java: Create Java Project.
+
+Choose No build tools (for simple learning) or Maven (for professional projects).
+
+
+
+
+***** For change version *****
+
+> sudo alternatives --config java 
+
+then choose the version
