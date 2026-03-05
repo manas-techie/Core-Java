@@ -1,22 +1,28 @@
 public class DataType {
     public static void main(String[] args) {
+        // java has 8 built in Primitive data types
         // Primitive Data Types
-        byte byteValue = 2; // Byte integer || range: -128 to 127 || size : 1 byte
-        short shortValue = 5; // Short integer || range: -32,768 to 32,767 || size : 2 bytes
+        //Integer
+        byte byteValue = 2; // Byte integer || size : 1 byte
+        short shortValue = 5; // Short integer || size : 2 bytes
         int intValue = 10; // Integer || range: -2,147,483,648 to 2,147,483,647 || size : 4 bytes
-        long longValue = 100L; // Long integer || range: -9,223,372,036,854,775,808 to
-                               // 9,223,372,036,854,775,807 || size : 8 bytes
-        float floatValue = 15.5f; // Floating-point number || range: approximately ±3.40282347E+38F (6-7
-                                  // significant decimal digits) || size : 4 bytes
-        double doubleValue = 20.5; // Floating-point number || range: approximately ±1.79769313486231570E+308 (15
-                                   // significant decimal digits) || size : 8 bytes
+        long longValue = 100L; // Long integer || size : 8 bytes
+
+        // Floting point 
+        float floatValue = 15.5f; // Floating-point number | size : 4 bytes
+        double doubleValue = 20.5; // Floating-point number || size : 8 bytes
+
+
+        // Character 
         char charValue = 'A'; // Character || size : 2 bytes
+
+        // Boolean
         boolean boolValue = true; // Boolean || size : 1 bit
 
         // Non-Primitive Data Types
         String stringValue = "Hello"; // String
         int[] intArray = { 1, 2, 3 }; // Array
-        // Object objValue = new Object(); // Object 
+        // Object objValue = new Object(); // Object
 
         // e and E represent scientific notation power of 10
         float f1 = 35e3f; // 35 x 10^3

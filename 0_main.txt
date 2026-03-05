@@ -1,0 +1,178 @@
+1. BASIC SYNTAX & EXECUTION
+   - JDK, JRE, and JVM architecture
+   - Compilation and execution process (javac and java)
+   - Variables and constants (final keyword)
+   - Primitive data types: byte, short, int, long, float, double, char, boolean
+   - Wrapper classes and Autoboxing/Unboxing
+   - Type casting (implicit widening, explicit narrowing)
+   - Comments (single-line, multi-line, Javadoc)
+
+2. OPERATORS
+   - Arithmetic operators (+, -, *, /, %)
+   - Relational/Comparison operators (==, !=, >, <, >=, <=)
+   - Logical operators (&&, ||, !)
+   - Bitwise operators (&, |, ^, ~, <<, >>, >>>) - *Crucial for advanced DSA*
+   - Assignment operators (=, +=, -=, etc.)
+   - Ternary operator (? :)
+   - instanceof operator
+
+3. CONTROL FLOW
+   - if, else if, else statements
+   - Nested conditionals
+   - switch statements (classic)
+   - Enhanced switch expressions (Java 12+)
+
+4. LOOPS
+   - for loops
+   - Enhanced for-each loops
+   - while loops
+   - do-while loops
+   - Loop control statements (break, continue)
+   - Labeled break and continue (useful in matrix/2D array DSA problems)
+   - Nested loops
+
+5. ARRAYS
+   - 1D Array creation, initialization, and indexing
+   - 2D Arrays and multidimensional arrays
+   - Jagged arrays
+   - Arrays utility class (sort, binarySearch, fill, copyOf, equals)
+   - Array traversal techniques
+
+6. STRING MANIPULATION
+   - String immutability and the String Pool
+   - String creation (literals vs. new keyword)
+   - String methods (length, charAt, substring, split, trim, replace, indexOf, toLowerCase, toUpperCase)
+   - StringBuilder (mutable, non-synchronized - *Default choice for DSA*)
+   - StringBuffer (mutable, thread-safe)
+   - String comparison (equals(), equalsIgnoreCase(), compareTo(), ==)
+
+7. OBJECT-ORIENTED PROGRAMMING (OOP) - BASICS
+   - Classes and objects
+   - Constructors (default, parameterized, copy)
+   - Constructor overloading
+   - The this keyword (referencing instances, constructor chaining)
+   - Access modifiers (private, default, protected, public)
+   - Methods (declaration, calling, return types, parameters)
+   - Pass-by-value semantics in Java (objects vs. primitives)
+
+8. OBJECT-ORIENTED PROGRAMMING (OOP) - ADVANCED
+   - Encapsulation (Getters and Setters)
+   - Inheritance (extends keyword, single and multilevel)
+   - The super keyword
+   - Polymorphism (Compile-time: Method Overloading)
+   - Polymorphism (Run-time: Method Overriding, Dynamic Method Dispatch)
+   - Abstraction (Abstract classes and abstract methods)
+   - Interfaces (implements keyword, default/static methods)
+
+9. STATIC AND FINAL KEYWORDS
+   - static variables (class variables)
+   - static methods
+   - static blocks
+   - Nested static classes
+   - final variables (constants)
+   - final methods (preventing overriding)
+   - final classes (preventing inheritance)
+
+10. EXCEPTION HANDLING
+    - Exception hierarchy (Throwable, Error, Exception)
+    - Checked exceptions (Compile-time) vs. Unchecked exceptions (RuntimeException)
+    - try-catch blocks
+    - Multiple catch blocks and multi-catch syntax (|)
+    - The finally block
+    - throw and throws keywords
+    - Custom/User-defined exceptions
+    - Try-with-resources (AutoCloseable)
+
+11. JAVA COLLECTIONS FRAMEWORK (JCF)
+    - Collection and Iterable interfaces
+    - Lists: ArrayList, LinkedList, Vector, Stack
+    - Sets: HashSet, LinkedHashSet, TreeSet
+    - Queues: Queue, PriorityQueue (Min-Heap/Max-Heap), Deque, ArrayDeque
+    - Maps (Not True Collections): HashMap, LinkedHashMap, TreeMap, Hashtable
+    - Iterators and ListIterator
+    - Collections utility class (sort, reverse, max, min)
+    - Comparable vs. Comparator for custom object sorting
+
+12. MULTITHREADING AND CONCURRENCY
+    - Thread lifecycle and states (New, Runnable, Blocked, Waiting, Terminated)
+    - Creating threads (Extending Thread vs. Implementing Runnable)
+    - Thread methods (start, run, sleep, join, yield)
+    - Synchronization (Race conditions, synchronized methods/blocks)
+    - Inter-thread communication (wait, notify, notifyAll)
+    - volatile keyword
+    - Executor Framework and Thread Pools
+    - Callable and Future
+
+13. GENERICS
+    - Need for Generics (Type safety, eliminating type casting)
+    - Generic classes and interfaces
+    - Generic methods
+    - Bounded type parameters (<T extends SuperClass>)
+    - Wildcards (?, ? extends T, ? super T)
+    - Type erasure concept
+
+14. MODERN JAVA (JAVA 8+ FEATURES)
+    - Lambda Expressions (->)
+    - Functional Interfaces (@FunctionalInterface)
+    - Built-in Functional Interfaces (Predicate, Function, Consumer, Supplier)
+    - Streams API (Declarative programming)
+    - Stream Intermediate Operations (filter, map, sorted, distinct)
+    - Stream Terminal Operations (collect, forEach, reduce, count)
+    - Optional class (Handling nulls gracefully)
+    - Method References (::)
+
+15. FILE HANDLING & I/O
+    - Byte Streams (FileInputStream, FileOutputStream)
+    - Character Streams (FileReader, FileWriter)
+    - BufferedReader and BufferedWriter (for fast I/O in competitive programming)
+    - Scanner class
+    - File class operations (create, delete, check exists)
+    - Java NIO (Channels, Buffers, Selectors - basics)
+
+16. MEMORY MANAGEMENT & JVM INTERNALS
+    - Stack memory (Method execution, local variables)
+    - Heap memory (Object allocation)
+    - Metaspace / Method Area
+    - Garbage Collection basics (Mark and Sweep)
+    - Types of References (Strong, Weak, Soft, Phantom)
+    - Understanding OutOfMemoryError and StackOverflowError
+
+17. ADVANCED DATA STRUCTURES IMPLEMENTATION (DSA FOCUS)
+    - Implementing Singly and Doubly Linked Lists from scratch
+    - Implementing Stacks and Queues using Arrays/LinkedLists
+    - Binary Trees and Binary Search Trees (BST)
+    - Tries (Prefix Trees)
+    - Graphs (Adjacency Matrix vs. Adjacency List representations)
+    - Disjoint Set / Union-Find
+
+18. MODULES AND PACKAGES
+    - Creating and using packages
+    - Naming conventions (com.company.project)
+    - Importing packages (import, static imports)
+    - Java 9 Module System (module-info.java, requires, exports)
+
+================================================================================
+                    LEARNING PRIORITY FOR BACKEND & DSA INTERVIEWS
+================================================================================
+
+HIGH PRIORITY (MUST KNOW):
+--------------------------
+1. Basic Syntax, Operators, Control Flow, Loops
+2. Arrays and String Manipulation (Crucial for 50%+ of interview problems)
+3. OOP Basics and Advanced (Classes, Inheritance, Polymorphism)
+4. Java Collections Framework (Lists, Maps, Sets, Queues, PriorityQueues)
+5. Exception Handling
+6. Implementing Advanced Data Structures from scratch (Trees, Graphs)
+
+MEDIUM PRIORITY (SHOULD KNOW):
+-------------------------------
+7. Modern Java / Java 8+ Features (Lambdas, Streams API)
+8. Multithreading & Concurrency (Critical for Backend system design)
+9. Generics (For writing reusable and type-safe backend code)
+10. Memory Management & JVM Internals (Understanding Stack vs Heap)
+
+LOWER PRIORITY (NICE TO HAVE / ON-THE-JOB):
+-------------------------------
+11. Deep dive into Java NIO and complex File I/O
+12. Java 9 Module System
+13. Advanced GUI frameworks (Swing, JavaFX - generally skip for backend)
